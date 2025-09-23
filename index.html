@@ -11,59 +11,115 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Cases</a></li>
-                <li><a href="#">Erfaring</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#erfaring">Erfaring</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
    </header>
-   <main>
-    <section class="hero">
+
+   <main class="slider">
+
+    <section class="hero slide" id="om">
         <section>
             <h1>Sabina Bjerggaard Andersen</h1>
             <h4>Studerende multimediedesigner</h4>
         </section>
         <figure>
-            <img src="#" alt="Billede af mig">
+            <img src="img/dame.PNG" alt="Billede af mig">
         </figure>
-        <section>
+        <section class="facts">
             <aside class="venstre">
-                <h3>facts</h3>
-                <h3>flere facts</h3>
+                <h4>facts</h4>
+                <h4>flere facts</h4>
             </aside>
             <aside class="højre">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe iure reprehenderit ipsam laboriosam, vel fugit quibusdam incidunt laudantium fugiat vero explicabo recusandae quidem. Cupiditate ullam eveniet officiis repellendus velit.</p>
             </aside>
         </section>
+
     </section>
-    <section class="cases">
-        <img src="#" alt="Billede af projekt">
-        <p>Kort forklaring af projekt.</p>
-        <button>Se mere knap</button>
+    <section class="cases slide" id="cases">
+        <img src="img/download.jfif" alt="Billede af projekt">
+        <div class="forklaring">
+            <p>Kort forklaring af projekt.</p>
+            <button>Se mere knap</button>
+        </div>
     </section>
-    <section class="erfaring">
-        <article>
-            <img src="#" alt="billede af mig">
+
+    <section class="erfaring slide" id="erfaring">
+        <article class="kort_intro">
+            <img src="img/pige.PNG" alt="billede af mig">
             <p>Jeg er studerende multimediedesigner med webudvikling, som studieretning. <br> Jeg er 24 år gammel.. bla bla bla.</p>
         </article>
         <article class="erhverv">
             <div class="eux">
-                <img src="#" alt="eux">
+                <img src="img/eux.PNG" alt="eux">
+                <p>kort forklaring om udd. bla bla.</p>
+            </div>
+            <div class="iba">
+                <img src="img/iba.PNG" alt="iba">
+                <p>kort forklaring om udd. bla bla.</p>
+            </div>
+            <div class="tjek">
+                <img src="img/tjek.PNG" alt="tjek">
+                <p>kort forklaring om udd. bla bla.</p>
+            </div>
+            <div class="genan">
+                <img src="img/genan.PNG" alt="genan">
                 <p>kort forklaring om udd. bla bla.</p>
             </div>
             <button>Download CV</button>
         </article>
     </section>
-    <section class="kontakt">
-        <img src="#" alt="billede">
-        <p>kontaktoplysninger. evt en kontaktformularer</p>
+
+    <section class="kontakt slide" id="kontakt">
+        <h1>Kontakt mig</h1>
+
+        <aside class="højre">
+            <form action="send_form.php" method="post">
+                <label for="navn">Navn:</label><br>
+                <input type="text" id="navn" name="navn" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="besked">Besked:</label><br>
+                <textarea id="besked" name="besked" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Send">
+            </form>
+        </aside>
+        <aside>
+            <div class="email">
+                <h4>E-mail</h4>
+                <p>sabina.bjerg@outlook.com</p>
+            </div>
+            <div class="nummer">
+                <h4>Telefon nummer</h4>
+                <p>+45 22 54 97 54</p>
+            </div>
+            <div class="adresse">
+                <h4>Adresse</h4>
+                <p>Borgergade 25 <br> 8831 Løgstrup</p>
+            </div>
+            <div class="sociale_medier">
+                
+            </div>
+        </aside>
     </section>
+
+    <button class="nav prev-btn">◀</button>
+    <button class="nav next-btn">▶</button>
+
    </main>
 
    <footer>
     <p>© 2025 Sabina Bjerggaard Andersen</p>
     <p>Studerende multimediedesigner</p>
    </footer>
+
+   <script src="js/script.js"></script>
 </body>
 </html>
